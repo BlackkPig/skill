@@ -314,7 +314,7 @@ python tools/skill_validator.py to-prompt skills/agent-team
 
 - **快速提交**：[创建 Issue 提交技能](https://github.com/anbeime/skill/issues/new?template=submit-skill.yml)
 - **PR 直接提交**：fork 仓库后复制 `skills/_template/` 创建技能，验证后提 PR
-- **想加入维护团队**：邮件 anbeime@coze.email 或开 Discussion
+- **想加入维护团队**：邮件 13632833907@qq.com 或开 Discussion
 
 ### 贡献者
 
