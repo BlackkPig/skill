@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "total_skills": 61,
-    "core_skills": 25,
+    "total_skills": 62,
+    "core_skills": 26,
     "sub_skills": 30,
     "system_builtin": 6,
-    "last_updated": "2026-02-11T15:30:00",
+    "last_updated": "2026-07-29T00:00:00",
     "location": "D:\\tool\\skills",
     "backup_location": "D:\\tool\\skills\\skill压缩文件",
     "backup_coverage": "100%",
@@ -40,8 +40,9 @@
       ]
     },
     "电商与营销": {
-      "count": 6,
+      "count": 7,
       "skills": [
+        "ecommerce-full-pipeline",
         "pet-commerce-creator",
         "ecommerce-copywriter",
         "ecommerce-video-marketing",
@@ -192,6 +193,16 @@
     ]
   },
   "update_log": [
+    {
+      "date": "2026-07-29",
+      "version": "2.1",
+      "changes": [
+        "新增技能：ecommerce-full-pipeline（跨境电商全链路自动化工具）",
+        "集成1688采集、数据清洗、多平台上架、推广方案、短视频创作、一键代发、爆品挖掘、闲鱼选品捡漏、全自动流水线",
+        "技能总数从61个增加到62个",
+        "电商与营销分类从6个增加到7个"
+      ]
+    },
     {
       "date": "2026-02-11",
       "version": "2.0",

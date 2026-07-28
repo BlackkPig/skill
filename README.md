@@ -17,8 +17,8 @@
 ## 📊 统计数据
 
 - **官方技能**: 182 个（来自 awesome-agent-skills，自动爬取）
-- **本地技能**: 61 个（25核心 + 30子技能 + 6系统内置）
-- **技能总数**: 243 个（官方 + 本地）
+- **本地技能**: 62 个（26核心 + 30子技能 + 6系统内置）
+- **技能总数**: 244 个（官方 + 本地）
 - **备份覆盖率**: 100%（71个压缩包，完整备份）
 - **自动更新**: 每24小时自动爬取最新技能
 
@@ -29,7 +29,7 @@
 
 ### 📦 双重技能库
 - **官方技能**：182个来自Anthropic、Vercel、Cloudflare、Google Labs、Hugging Face等顶级团队
-- **本地技能**：61个精选中文技能，涵盖内容创作、视频制作、电商营销等垂直领域
+- **本地技能**：62个精选中文技能，涵盖内容创作、视频制作、电商营销等垂直领域
 
 ### 🏷️ 智能分类
 按照功能、来源、Star数量等多维度标签进行分类整理。
@@ -54,7 +54,7 @@
 - **Better Auth** (3个) - best-practices, commands, create-auth
 - **其他团队** - Tinybird, Remotion, Inngest 等
 
-## 💾 本地技能库（61个）
+## 💾 本地技能库（62个）
 
 ### 📝 内容创作与发布（10个）
 - **content-creation-publisher** ⭐⭐⭐⭐⭐ - 内容创作与发布全流程
@@ -78,7 +78,8 @@
 - **historical-interview-scripts** ⭐⭐ - 历史访谈文案
 - **three-body-video-creator** ⭐⭐ - 《三体》视频创作
 
-### 🛒 电商与营销（6个）
+### 🛒 电商与营销（7个）
+- **ecommerce-full-pipeline** ⭐⭐⭐⭐⭐ - 跨境电商全链路自动化（1688采集/清洗/上架/推广/视频/代发/爆品挖掘/闲鱼选品捡漏）
 - **pet-commerce-creator** ⭐⭐⭐ - 萌宠带货短视频
 - **ecommerce-copywriter** ⭐⭐⭐ - 电商图片文案
 - **ecommerce-video-marketing** ⭐⭐⭐ - 电商视频营销
@@ -284,18 +285,19 @@ python tools/skill_validator.py to-prompt skills/agent-team
 
 ## 🎯 核心技能推荐
 
-### ⭐⭐⭐⭐⭐ 五星技能（10个）
+### ⭐⭐⭐⭐⭐ 五星技能（11个）
 
 1. **content-creation-publisher** - 内容创作与发布全流程
 2. **intelligent-content-system** - 智能内容系统
 3. **video-creation-suite** - 完整视频创作套件
-4. **NanoBanana-PPT-Skills** - AI生成PPT
-5. **tts-voice-synthesis** - 智能语音合成
-6. **infinitetalk** - 音频驱动视频配音
-7. **pptx** - PPT文件处理（系统内置）
-8. **xlsx** - Excel文件处理（系统内置）
-9. **pdf** - PDF文件处理（系统内置）
-10. **docx** - Word文件处理（系统内置）
+4. **ecommerce-full-pipeline** - 跨境电商全链路自动化（1688采集/上架/推广/视频/代发/爆品挖掘/闲鱼选品）
+5. **NanoBanana-PPT-Skills** - AI生成PPT
+6. **tts-voice-synthesis** - 智能语音合成
+7. **infinitetalk** - 音频驱动视频配音
+8. **pptx** - PPT文件处理（系统内置）
+9. **xlsx** - Excel文件处理（系统内置）
+10. **pdf** - PDF文件处理（系统内置）
+11. **docx** - Word文件处理（系统内置）
 
 ## 🔗 相关链接
 
@@ -336,6 +338,12 @@ MIT License
 - 所有贡献技能的开发团队和个人
 
 ## 📝 更新日志
+
+### v2.2 (2026-07-29)
+- ✨ 新增 `ecommerce-full-pipeline` 技能：跨境电商全链路自动化工具
+- 🛒 集成1688采集、数据清洗、多平台上架（微信小店/Shopify/TikTok）、推广方案、短视频创作、一键代发、爆品挖掘、闲鱼选品捡漏、全自动流水线
+- 📊 本地技能从61个增加到62个
+- 🏆 电商与营销分类从6个增加到7个
 
 ### v2.1 (2026-07-28)
 - 🛠️ 新增技能验证工具 (`tools/skill_validator/`)
