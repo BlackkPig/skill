@@ -211,6 +211,29 @@ ls docs/
 - [技能清理与迁移指南](docs/技能清理与迁移指南.md) - 技能迁移和备份指南
 - [技能数量差异分析](docs/技能数量差异分析报告.md) - 技能数量统计分析
 - [整理完成报告](docs/D盘tool目录整理完成报告.md) - 详细的整理过程
+- [Agent Skills 规范文档](docs/specification.md) - 技能文件格式规范
+- [技能创作最佳实践](docs/best-practices.md) - 如何写出高质量技能
+- [快速入门](docs/quickstart.md) - 30秒创建一个技能
+
+## 🛠️ 技能验证工具
+
+内置技能验证工具，用于检查 `SKILL.md` 是否符合规范：
+
+```bash
+# 验证所有技能
+python tools/skill_validator.py validate
+
+# 验证单个技能
+python tools/skill_validator.py validate skills/agent-team
+
+# 读取技能属性
+python tools/skill_validator.py read-properties skills/agent-team --json
+
+# 生成 XML prompt（用于 AI 调用）
+python tools/skill_validator.py to-prompt skills/agent-team
+```
+
+详见 [工具文档](tools/README.md)。
 
 ## 📊 数据格式
 
@@ -283,14 +306,14 @@ ls docs/
 
 ## 🤝 贡献
 
-欢迎提交 Issue 和 Pull Request！
+欢迎提交 Issue 和 Pull Request！详见 [贡献指南](CONTRIBUTING.md)。
 
 ## 🤝 贡献你的技能
 
 发现了好用的 AI Agent 技能？欢迎提交！
 
 - **快速提交**：[创建 Issue 提交技能](https://github.com/anbeime/skill/issues/new?template=submit-skill.yml)
-- **PR 直接提交**：fork 仓库后在 `skills/` 目录添加你的技能，提 PR
+- **PR 直接提交**：fork 仓库后复制 `skills/_template/` 创建技能，验证后提 PR
 - **想加入维护团队**：邮件 anbeime@coze.email 或开 Discussion
 
 ### 贡献者
@@ -313,6 +336,14 @@ MIT License
 - 所有贡献技能的开发团队和个人
 
 ## 📝 更新日志
+
+### v2.1 (2026-07-28)
+- 🛠️ 新增技能验证工具 (`tools/skill_validator/`)
+- 📋 新增技能创建模板 (`skills/_template/`)
+- 📖 新增规范文档、最佳实践、快速入门
+- 📝 新增贡献指南 (`CONTRIBUTING.md`)
+- ✅ 验证工具支持双重嵌套目录结构
+- ⚠️ 非标准字段改为警告（兼容社区技能）
 
 ### v2.0 (2026-02-11)
 - ✨ 新增12个本地技能
