@@ -1,30 +1,97 @@
 <!DOCTYPE html><html lang="zh-CN"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>AI 技能 & 工作流商店</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; } .container { max-width: 1400px; margin: 0 auto; } header { text-align: center; color: white; margin-bottom: 40px; } h1 { font-size: 3rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); } .subtitle { font-size: 1.2rem; opacity: 0.9; } .resource-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-bottom: 40px; } .resource-card { background: white; border-radius: 20px; padding: 40px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden; } .resource-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #667eea, #764ba2); } .resource-card:hover { transform: translateY(-10px); box-shadow: 0 30px 80px rgba(0,0,0,0.4); } .resource-icon { font-size: 4rem; margin-bottom: 20px; } .resource-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 15px; } .resource-description { color: #666; line-height: 1.8; margin-bottom: 20px; font-size: 1.1rem; } .resource-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 25px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; } .stat { text-align: center; } .stat-number { font-size: 2rem; font-weight: bold; color: #667eea; display: block; } .stat-label { font-size: 0.9rem; color: #666; margin-top: 5px; } .resource-button { display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; text-decoration: none; border-radius: 30px; font-size: 1.1rem; font-weight: 600; transition: all 0.3s; box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4); } .resource-button:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6); } .features { margin: 20px 0; } .feature-item { display: flex; align-items: center; gap: 10px; margin: 10px 0; color: #555; } .feature-item::before { content: '✓'; display: inline-block; width: 24px; height: 24px; background: #10b981; color: white; border-radius: 50%; text-align: center; line-height: 24px; font-weight: bold; } @media (max-width: 768px) { h1 { font-size: 2rem; } .resource-cards { grid-template-columns: 1fr; } } </style></head><body> <div class="container"> <header> <h1>🎯 AI 技能 & 工作流商店</h1> <p class="subtitle">一站式 AI Agent Skills 和 N8N 工作流资源中心</p> </header> <div class="resource-cards">
-        <!-- 小易伴侣卡片 -->
+        <!-- StarClaw 卡片 -->
         <div class="resource-card">
-            <div class="resource-icon">💬</div>
-            <div class="resource-title">小易伴侣</div>
+            <div class="resource-icon">🌟</div>
+            <div class="resource-title">StarClaw 虚拟娱乐公司操作系统</div>
             <div class="resource-description">
-                真正可运行的 AI 对话和图片生成系统！基于智谱 GLM-4-Flash 模型，支持真实对话、图片生成、多场景切换。任嘉伦AI伴侣人设，GPT-SoVITS 音色克隆，让AI伴侣更真实。
+                笔者自研的"虚拟娱乐公司操作系统"，由 19 位 AI 明星组成的虚拟团队协同运营。四大团队分工协作，覆盖从战略决策到执行落地的全链路；旗下小易（任伦伦 AI 伴侣）等明星均可直接调用技能仓库的全部技能。本页为预览展示，系统需私有部署，有需要请先看演示视频，再主动联系。
             </div>
             <div class="resource-stats">
                 <div class="stat">
-                    <span class="stat-number">🎭</span>
-                    <div class="stat-label">任嘉伦人设</div>
+                    <span class="stat-number">19</span>
+                    <div class="stat-label">AI 明星</div>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">🎨</span>
-                    <div class="stat-label">AI生图</div>
+                    <span class="stat-number">4</span>
+                    <div class="stat-label">大团队</div>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">🗣️</span>
-                    <div class="stat-label">语音克隆</div>
+                    <span class="stat-number">13</span>
+                    <div class="stat-label">核心技能</div>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">💕</span>
-                    <div class="stat-label">AI伴侣</div>
+                    <span class="stat-number">🚀</span>
+                    <div class="stat-label">自研 OS</div>
                 </div>
             </div>
-            <a href="http://localhost:3000" class="resource-button" target="_blank">启动小易伴侣</a>
-            <a href="http://localhost:3001/voice.html" class="resource-button secondary" target="_blank" style="margin-left: 10px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">语音版</a>
+            <div class="features">
+                <div class="feature-item" style="font-weight:bold; color:#667eea;">🏛️ 四大团队架构</div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:8px 0 14px;">
+                    <div style="background:#f8f9fa; border-radius:10px; padding:10px; font-size:0.86rem;"><b>🏛️ 战略决策层</b><br>马斯伦 · 伦巴 · 索斯乔 · 唐特特</div>
+                    <div style="background:#f8f9fa; border-radius:10px; padding:10px; font-size:0.86rem;"><b>📣 营销运营层</b><br>雷君君 · 贾亭亭 · 泰乐乐 · 杨米米</div>
+                    <div style="background:#f8f9fa; border-radius:10px; padding:10px; font-size:0.86rem;"><b>🎨 创意制作层</b><br>周星星 · 胡哥哥 · 任伦伦 · 张谋谋 · 周伦伦</div>
+                    <div style="background:#f8f9fa; border-radius:10px; padding:10px; font-size:0.86rem;"><b>🛡️ 执行保障层</b><br>刘华华 · 古天天 · OpenClaw(CTO)</div>
+                </div>
+                <div class="feature-item" style="font-weight:bold; color:#667eea;">🛠️ 13 项核心技能</div>
+                <div style="display:flex; flex-wrap:wrap; gap:6px; margin:8px 0 14px;">
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">战略决策</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">预算管理</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">风险评估</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">谈判策略</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">营销策划</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">内容创作</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">视觉设计</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">音乐创作</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">项目管理</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">品质审核</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">代码开发</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">搜索引擎</span>
+                    <span style="background:#eef2ff; color:#4a56e2; border-radius:20px; padding:5px 12px; font-size:0.82rem;">网页爬取</span>
+                </div>
+                <div class="feature-item">🔗 可调用技能仓库全部技能（416+ 实体技能，私有部署后生效）</div>
+                <div class="feature-item">🔒 需私有部署 · 有需要请主动联系</div>
+            </div>
+            <a href="https://www.bilibili.com/video/BV1fF93B8E97/?vd_source=c36a0f7b3016a2017a22fbc6bc2780ae" class="resource-button" target="_blank">▶ 观看演示视频</a>
+            <a href="https://www.bilibili.com/video/BV1fF93B8E97/?vd_source=c36a0f7b3016a2017a22fbc6bc2780ae" class="resource-button secondary" target="_blank" style="margin-left: 10px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">📩 联系部署（B站私信）</a>
         </div>
- <div class="resource-card"> <div class="resource-icon">🎨</div> <h2 class="resource-title">AI Agent Skills</h2> <p class="resource-description"> 精选的 AI Agent 技能包集合，涵盖文档处理、内容创作、编程开发、机器学习等多个领域 </p> <div class="resource-stats"> <div class="stat"> <span class="stat-number">243</span> <span class="stat-label">技能总数</span> </div> <div class="stat"> <span class="stat-number">14+</span> <span class="stat-label">分类</span> </div> </div> <div class="features"> <div class="feature-item">182个官方技能 + 61个本地技能</div> <div class="feature-item">自动从 GitHub 同步最新数据</div> <div class="feature-item">详细的技能说明和使用指南</div> </div> <a href="skills.html" class="resource-button"> 浏览 AI Skills → </a> </div> <div class="resource-card"> <div class="resource-icon">⚡</div> <h2 class="resource-title">N8N Workflows</h2> <p class="resource-description"> 4800+ 精心整理的 N8N 工作流模板，支持 371 种服务集成，覆盖自动化的各个场景 </p> <div class="resource-stats"> <div class="stat"> <span class="stat-number">4,834</span> <span class="stat-label">工作流</span> </div> <div class="stat"> <span class="stat-number">371</span> <span class="stat-label">集成服务</span> </div> </div> <div class="features"> <div class="feature-item">按触发类型和复杂度筛选</div> <div class="feature-item">可视化流程图展示</div> <div class="feature-item">一键下载 JSON 导入 N8N</div> </div> <a href="https://e3eb070d.n8n-workflows-bxc.pages.dev/" target="_blank" class="resource-button"> 浏览 N8N Workflows → </a> </div> </div> </div></body></html>
+
+        <!-- 四色卡片知识管理系统 卡片 -->
+        <div class="resource-card">
+            <div class="resource-icon">🎴</div>
+            <div class="resource-title">四色卡片知识管理系统</div>
+            <div class="resource-description">
+                自研的卡片式知识管理系统（预览展示）。用四色分类法把碎片信息整理为可检索、可复用的知识网络；部署后可调用技能仓库的全部技能，让知识管理与自动化工作流打通。系统需私有部署，有需要请先看演示视频，再主动联系。
+            </div>
+            <div class="resource-stats">
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <div class="stat-label">四色分类</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">🔗</span>
+                    <div class="stat-label">全技能调用</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">🔒</span>
+                    <div class="stat-label">私有部署</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">🧠</span>
+                    <div class="stat-label">知识网络</div>
+                </div>
+            </div>
+            <div class="features">
+                <div class="feature-item" style="font-weight:bold; color:#667eea;">🗂️ 四色分类法</div>
+                <div style="display:flex; gap:8px; margin:8px 0 14px;">
+                    <span style="flex:1; text-align:center; border-radius:8px; padding:12px 4px; color:#fff; font-size:0.8rem; background:#ef4444;">🔴 红</span>
+                    <span style="flex:1; text-align:center; border-radius:8px; padding:12px 4px; color:#fff; font-size:0.8rem; background:#eab308;">🟡 黄</span>
+                    <span style="flex:1; text-align:center; border-radius:8px; padding:12px 4px; color:#fff; font-size:0.8rem; background:#3b82f6;">🔵 蓝</span>
+                    <span style="flex:1; text-align:center; border-radius:8px; padding:12px 4px; color:#fff; font-size:0.8rem; background:#22c55e;">🟢 绿</span>
+                </div>
+                <div class="feature-item">🔗 可调用技能仓库全部技能（416+ 实体技能）</div>
+                <div class="feature-item">🔒 需私有部署 · 有需要请主动联系</div>
+            </div>
+            <a href="https://www.bilibili.com/video/BV1hqPhzAEwn/?vd_source=c36a0f7b3016a2017a22fbc6bc2780ae" class="resource-button" target="_blank">▶ 观看演示视频</a>
+            <a href="https://www.bilibili.com/video/BV1hqPhzAEwn/?vd_source=c36a0f7b3016a2017a22fbc6bc2780ae" class="resource-button secondary" target="_blank" style="margin-left: 10px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">📩 联系部署（B站私信）</a>
+        </div>
+ <div class="resource-card"> <div class="resource-icon">🎨</div> <h2 class="resource-title">AI Agent Skills</h2> <p class="resource-description"> 精选的 AI Agent 技能包集合，涵盖文档处理、内容创作、编程开发、机器学习等多个领域 </p> <div class="resource-stats"> <div class="stat"> <span class="stat-number">416</span> <span class="stat-label">实体技能</span> </div> <div class="stat"> <span class="stat-number">14+</span> <span class="stat-label">分类</span> </div> </div> <div class="features"> <div class="feature-item">416 实体技能 · 182 官方索引 · 366 已校验</div> <div class="feature-item">自动从 GitHub 同步最新数据</div> <div class="feature-item">详细的技能说明和使用指南</div> </div> <a href="skills.html" class="resource-button"> 浏览 AI Skills → </a> </div> <div class="resource-card"> <div class="resource-icon">⚡</div> <h2 class="resource-title">N8N Workflows</h2> <p class="resource-description"> 4800+ 精心整理的 N8N 工作流模板，支持 371 种服务集成，覆盖自动化的各个场景 </p> <div class="resource-stats"> <div class="stat"> <span class="stat-number">4,834</span> <span class="stat-label">工作流</span> </div> <div class="stat"> <span class="stat-number">371</span> <span class="stat-label">集成服务</span> </div> </div> <div class="features"> <div class="feature-item">按触发类型和复杂度筛选</div> <div class="feature-item">可视化流程图展示</div> <div class="feature-item">一键下载 JSON 导入 N8N</div> </div> <a href="https://e3eb070d.n8n-workflows-bxc.pages.dev/" target="_blank" class="resource-button"> 浏览 N8N Workflows → </a> </div> </div> </div></body></html>
