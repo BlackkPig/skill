@@ -1,0 +1,90 @@
+--- README.md
++++ README.patched.md
+@@ -9,18 +9,18 @@
+ 
+ 收录最全、更新最快的AI Agent技能库，涵盖**文档处理、内容创作、编程开发、机器学习、自动化工作流**等多个领域的精选技能包。
+ 
+-[![官方技能](https://img.shields.io/badge/官方技能-182-blue?style=flat-square)](https://github.com/anbeime/skill)
+-[![本地技能](https://img.shields.io/badge/本地技能-61-green?style=flat-square)](https://github.com/anbeime/skill)
++[![实体技能](https://img.shields.io/badge/实体技能-416-green?style=flat-square)](https://github.com/anbeime/skill/tree/main/skills)
++[![官方索引](https://img.shields.io/badge/官方索引-182-blue?style=flat-square)](https://github.com/anbeime/skill/blob/main/SKILL_SOURCES.json)
+ [![备份覆盖](https://img.shields.io/badge/备份覆盖-100%25-success?style=flat-square)](https://github.com/anbeime/skill)
+ [![自动更新](https://img.shields.io/badge/更新-每24小时-orange?style=flat-square)](https://github.com/anbeime/skill)
+ 
+ ## 📊 统计数据
+ 
+-- **官方技能**: 182 个（来自 awesome-agent-skills，自动爬取）
+-- **本地技能**: 62 个（26核心 + 30子技能 + 6系统内置）
+-- **技能总数**: 244 个（官方 + 本地）
++- **实体技能**: 416 个（可 clone 验证：主库 62 + SkillHub 采集 336 + 本机快照 29，去重 3）
++- **官方索引**: 182 个（来自 awesome-agent-skills / OpenAI Skills，每日自动同步链接）
++- **规范校验**: 366 / 366 通过（`skillhub-collection/` 全量，见 [合规报告](skillhub-collection/VALIDATION.md)）
+ - **备份覆盖率**: 100%（71个压缩包，完整备份）
+-- **自动更新**: 每24小时自动爬取最新技能
++- **自动更新**: 每 24 小时自动同步上游技能源（[GitHub Actions](.github/workflows)）
+ 
+ ## 🌟 核心特性
+ 
+@@ -54,7 +54,7 @@
+ - **Better Auth** (3个) - best-practices, commands, create-auth
+ - **其他团队** - Tinybird, Remotion, Inngest 等
+ 
+-## 💾 本地技能库（62个）
++## 💾 本地技能库（62个 · 主库）
+ 
+ ### 📝 内容创作与发布（10个）
+ - **content-creation-publisher** ⭐⭐⭐⭐⭐ - 内容创作与发布全流程
+@@ -215,6 +215,10 @@
+ - [Agent Skills 规范文档](docs/specification.md) - 技能文件格式规范
+ - [技能创作最佳实践](docs/best-practices.md) - 如何写出高质量技能
+ - [快速入门](docs/quickstart.md) - 30秒创建一个技能
++- [规范合规报告](skillhub-collection/VALIDATION.md) - 366 个技能的 Agent Skills 规范校验结果与规范化明细
++- [Star 增长与转化策略](skillhub-collection/GROWTH.md) - 基于真实数据的运营诊断与分阶段行动清单
++- [仓库元数据物料](skillhub-collection/REPO_META.md) - 简介 / Topics / CTA 文案，复制即用
++- [许可与来源声明](NOTICE.md) - 三层许可结构与第三方技能权利说明
+ 
+ ## 🛠️ 技能验证工具
+ 
+@@ -235,6 +239,17 @@
+ ```
+ 
+ 详见 [工具文档](tools/README.md)。
++
++本仓库的 `skillhub-collection/` 子集合已全量通过校验（**366 / 366**，0 失败）：
++
++```bash
++pip install pyyaml   # 校验器依赖，缺失会产生大量假阳性
++python tools/skill_validator.py validate skillhub-collection/skills
++python tools/skill_validator.py validate skillhub-collection/installed-skills
++```
++
++规范化脚本 `skillhub-collection/normalize_skills.py` 可幂等修复 frontmatter（支持 `--dry-run` 预览）。
++详细结果见 [规范合规报告](skillhub-collection/VALIDATION.md)。
+ 
+ ## 📊 数据格式
+ 
+@@ -332,12 +347,24 @@
+ 
+ MIT License
+ 
++> 完整许可结构见 [NOTICE.md](NOTICE.md)：
++> 工具代码 **MIT** / 原创内容 **CC-BY-4.0** / **第三方采集技能保留原作者许可**。
++>
++> 如你是某个技能的权利人并希望移除，请提 Issue，我们会在 48 小时内处理。
++
+ ## 🙏 致谢
+ 
+ - [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) - 官方技能源仓库
+ - 所有贡献技能的开发团队和个人
+ 
+ ## 📝 更新日志
++
++### v2.3 (2026-07-31)
++- 🔀 合并 `skillhub-collection/` 子集合：新增 354 个技能，全库实体技能达 **416** 个
++- ✅ 全量对齐 Agent Skills 规范，366 / 366 通过 `tools/skill_validator.py` 校验
++- 📄 新增 `LICENSE`（MIT）与 `NOTICE.md`（三层许可结构 + 第三方技能来源声明）
++- 👥 新增 TOP 专家团配置（9 大专业团队 + agent-dispatcher 调度层）
++- 📊 修正统计口径：区分「实体技能 416」与「官方索引 182」，不再混算为 244
+ 
+ ### v2.2 (2026-07-29)
+ - ✨ 新增 `ecommerce-full-pipeline` 技能：跨境电商全链路自动化工具
