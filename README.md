@@ -14,6 +14,9 @@
 [![备份覆盖](https://img.shields.io/badge/备份覆盖-100%25-success?style=flat-square)](https://github.com/anbeime/skill)
 [![自动更新](https://img.shields.io/badge/更新-每24小时-orange?style=flat-square)](https://github.com/anbeime/skill)
 
+> 🧠 **知易（ZhiYi）多模型智能知识管家** — 一个对话框调度所有模型，240+技能即插即用，四色卡片让AI真正记住你。
+> [👉 立即体验](https://ai123.miyucaicai.cn) · [⭐ 知易开源版](https://gitee.com/anbeime/zhiyi)
+
 ## 📊 统计数据
 
 - **官方技能**: 182 个（来自 awesome-agent-skills，自动爬取）
@@ -2590,3 +2593,18 @@ Common CLI flows:
 - Manage local installs: `clawhub install @openclaw/demo`, `clawhub pin <skill>`, `clawhub unpin <skill>`, `clawhub uninstall <skill>`, `clawhub list`, `clawhub update --all`
 - Inspect without installing: `clawhub inspect @op
 <!-- clawhub-sync-end -->
+
+---
+
+## 💬 联系我们 & 社群
+
+有任何问题、建议或合作需求，欢迎通过以下方式联系：
+
+- 🧠 **知易AI体验**：[ai123.miyucaicai.cn](https://ai123.miyucaicai.cn)
+- 🐙 **GitHub Issues**：[提交Issue](https://github.com/anbeime/skill/issues)
+- 💬 **微信交流群**：扫码加入（备注「技能」）
+
+<img src="images/wechat-qr.jpg" alt="微信二维码" width="200" height="200" style="border-radius:12px;border:1px solid #e0e0e0;">
+
+> 扫码添加微信，拉你进AI技能交流群，第一时间获取新技能更新和知易产品动态。
+
