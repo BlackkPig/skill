@@ -1,6 +1,6 @@
 ---
 name: antinet-security-scan
-description: 对进入系统的文件或 URL 执行安全与合规扫描，输出 pass/reject 判定与扫描报告，作为所有文档处理的强制前置关卡。
+description: 信息安全分析师与软件开发工程师在搭建文档处理流水线时，当需要拦截违规文件或外部URL，请挂载此技能作为强制前置安检，自动输出 pass/reject 判定与详细合规扫描报告，一键守住零信任安全底线。
 assign_when: 该 Worker 是文档入口的安全守门人，负责域名黑名单、OA 许可校验与可疑来源拦截；任何文件进入系统前必须经其把关。
 ---
 
