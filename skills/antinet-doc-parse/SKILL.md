@@ -1,6 +1,6 @@
 ---
 name: antinet-doc-parse
-description: 将 PDF/PPT/Excel/Word 等多格式文档解析为结构化 Markdown，并输出元数据与解析置信度，作为 RAG 与四色卡片的数据底座。
+description: 软件开发工程师与数据科学家在构建RAG系统时，当需处理PDF/Word/Excel等多格式复杂文档，用此技能可自动触发三级解析降级，一键输出高置信度结构化Markdown与元数据，免去繁琐清洗，直接夯实企业知识库数据底座！
 assign_when: 该 Worker 负责把任意格式的原始文档转成机器可读的结构化文本，是下游信息抽取与检索的通用解析入口。
 ---
 
