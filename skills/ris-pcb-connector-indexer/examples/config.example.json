@@ -1,0 +1,12 @@
+{
+  "pcbdoc": "your_board.PcbDoc",
+  "connector": "J8",
+  "expected_count": 288,
+  "rows": 12,
+  "cols": 24,
+  "source_span": "auto",
+  "row_tolerance_mm": 0.25,
+  "connect_tolerance_mm": 0.002,
+  "bbox": null,
+  "anchors": []
+}
