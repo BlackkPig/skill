@@ -1,0 +1,14 @@
+# Protect board IP / generated mapping by default
+*.PcbDoc
+*.PcbLib
+*.PrjPcb
+*.xlsx
+*.xls
+outputs/
+*_mapping.json
+*_mapping.csv
+*_connector_pins.csv
+*_diagnostics.json
+__pycache__/
+.pytest_cache/
+*.pyc
